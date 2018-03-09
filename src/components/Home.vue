@@ -1,14 +1,21 @@
 <template>
   <div>
-    <div class="hello">
-      <v-layout>
-        <v-flex xs2>
-          <h1>Heilys</h1>
-        </v-flex>
-        <v-flex xs10 style="text-align: right; padding-right: 55px;">
-          <v-icon large style="cursor: pointer" @click="openMenu">list</v-icon>
-        </v-flex>
-      </v-layout>
+    <div class="centered">
+      <div class="in-progress">
+        <span>Сайт находится в разработке</span>
+        <div class="links">
+          <a href="https://www.instagram.com/heilys.space/">
+            <img src="/static/instagram.svg" alt="image description">
+          </a>
+          <a href="https://dribbble.com/sroslyakova">
+            <img src="/static/dribbble.svg" alt="image description">
+          </a>
+          <a href="https://www.behance.net/sroslyakova">
+            <img src="/static/behance.svg" alt="image description">
+          </a>
+        </div>
+
+      </div>
     </div>
   </div>
 </template>
@@ -31,18 +38,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .in-progress {
+    padding-bottom: 10vh;
+  }
+
+  .in-progress span {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+  }
+
+  .in-progress .links img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    margin-top: 4vh;
+  }
 </style>
