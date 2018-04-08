@@ -2,18 +2,25 @@
   <div>
     <div class="centered">
       <div class="in-progress">
-        <span>Сайт находится в разработке</span>
         <div class="links">
-          <a href="https://www.instagram.com/heilys.space/">
-            <img src="/static/instagram.svg" alt="image description">
+          <a href="https://www.flickr.com/photos/sroslyakova/">
+            <img src="/static/flickr.svg" alt="flickr">
           </a>
-          <a href="https://dribbble.com/sroslyakova">
-            <img src="/static/dribbble.svg" alt="image description">
+          <a href="https://www.instagram.com/heilys.space/">
+            <img src="/static/instagram.svg" alt="instagram">
           </a>
           <a href="https://www.behance.net/sroslyakova">
-            <img src="/static/behance.svg" alt="image description">
+            <img src="/static/behance.svg" alt="behance">
+          </a>
+          <a href="https://dribbble.com/sroslyakova">
+            <img src="/static/dribbble.svg" alt="dribbble">
+          </a>
+          <a href="https://vimeo.com/sroslyakova">
+            <img src="/static/vimeo.svg" alt="vimeo" style="margin-right: 0">
           </a>
         </div>
+        <div><span>Сайт в разработке...</span></div>
+        <div class="mail-descriptor"><span>Пишите письма на heilys@ya.ru</span></div>
 
       </div>
     </div>
@@ -51,15 +58,20 @@ export default {
   }
 
   .in-progress span {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
   }
 
   .in-progress .links img {
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
     margin-top: 4vh;
+    margin-bottom: 3vh;
+  }
+
+  .mail-descriptor {
+    margin-top: 5px;
   }
 </style>
