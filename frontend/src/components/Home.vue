@@ -19,7 +19,7 @@
             <img src="/static/vimeo.svg" alt="vimeo" style="margin-right: 0">
           </a>
         </div>
-        <div><span>Сайт в разработке...</span></div>
+        <div class="mail-start-descriptor"><span>Сайт в разработке...</span></div>
         <div class="mail-descriptor"><span>Пишите письма на heilys@ya.ru</span></div>
 
       </div>
@@ -73,5 +73,53 @@ export default {
 
   .mail-descriptor {
     margin-top: 5px;
+  }
+
+  @media only screen and (max-width: 660px) {
+    .in-progress .links img {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+    }
+
+    .mail-start-descriptor {
+      margin-top: 20px;
+    }
+
+    .mail-descriptor {
+      margin-top: 5px;
+    }
+
+    .in-progress span {
+      font-size: 1.2rem;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .in-progress .links img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+    }
+
+    .mail-start-descriptor {
+      margin-top: 20px;
+    }
+
+    .mail-descriptor {
+      margin-top: 5px;
+    }
+
+    .in-progress span {
+      font-size: 1.2rem;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+    }
   }
 </style>
